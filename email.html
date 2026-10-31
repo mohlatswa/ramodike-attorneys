@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professional Email | Ramodike Attorneys Inc.</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1a33;--navy2:#10284d;--blue:#1d4fa3;--blue2:#2f6fd6;--ice:#eef3fb;--ink:#1b2333;--muted:#5b6678;--line:#dde4ef;--gold:#c9a24a;--red:#c0392b;--green:#1e8e5a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#f6f8fc;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--navy);line-height:1.15}
+.demo{background:var(--gold);color:var(--navy);text-align:center;font-size:.8rem;font-weight:600;padding:7px 12px}
+.demo a{text-decoration:underline}
+.top{background:linear-gradient(115deg,var(--navy),var(--navy2) 60%,var(--blue));color:#d7e2f4;padding:70px 0 80px;text-align:center}
+.top .eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:#9cc0ff;font-weight:600}
+.top h1{color:#fff;font-size:clamp(2.2rem,5vw,3.4rem);margin:12px 0 14px}
+.top p{max-width:640px;margin:0 auto}
+.domain{display:inline-block;margin-top:26px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:40px;padding:12px 26px;font-size:1.15rem;color:#fff;font-weight:600;letter-spacing:.02em}
+.domain span{color:#9cc0ff}
+section{padding:70px 0}
+.head{text-align:center;margin-bottom:40px}
+.head h2{font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:8px}
+.head p{color:var(--muted)}
+
+/* compare */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:860px;margin:0 auto}
+.cmp>div{background:#fff;border-radius:10px;padding:28px;border:1px solid var(--line)}
+.cmp .bad{border-top:4px solid var(--red)}
+.cmp .good{border-top:4px solid var(--green)}
+.cmp .lbl{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.bad .lbl{color:var(--red)}.good .lbl{color:var(--green)}
+.cmp .addr{font-size:1.05rem;font-weight:600;margin:10px 0 16px;word-break:break-all;color:var(--navy)}
+.cmp li{list-style:none;padding:5px 0;font-size:.92rem;color:var(--muted);display:flex;gap:10px}
+.bad li::before{content:"\2715";color:var(--red);font-weight:700}
+.good li::before{content:"\2713";color:var(--green);font-weight:700}
+
+/* addresses */
+.boxes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;gap:14px;align-items:center}
+.av{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:700;flex:none}
+.box b{display:block;color:var(--navy);font-size:.95rem;word-break:break-all}
+.box span{font-size:.8rem;color:var(--muted)}
+
+/* inbox mock */
+.mail{background:#fff;border-radius:12px;box-shadow:0 20px 50px rgba(10,26,51,.12);overflow:hidden;border:1px solid var(--line)}
+.mbar{background:var(--navy);color:#fff;display:flex;align-items:center;gap:12px;padding:12px 18px;font-size:.88rem}
+.mbar .dots{display:flex;gap:6px}.mbar .dots i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.mbar .dots i:nth-child(2){background:#febc2e}.mbar .dots i:nth-child(3){background:#28c840}
+.mbar .url{flex:1;background:rgba(255,255,255,.1);border-radius:6px;padding:5px 12px;color:#c9d6ec;font-size:.8rem}
+.mbody{display:grid;grid-template-columns:200px 1fr 1.3fr;min-height:430px}
+.side{background:var(--ice);padding:18px 12px;font-size:.88rem}
+.side .compose{background:var(--blue);color:#fff;border-radius:6px;padding:10px;text-align:center;font-weight:600;margin-bottom:16px}
+.side div.f{padding:7px 10px;border-radius:6px;display:flex;justify-content:space-between;color:var(--muted)}
+.side div.f.on{background:#fff;color:var(--navy);font-weight:600}
+.side .who{margin-top:24px;font-size:.75rem;color:var(--muted);padding:0 10px;word-break:break-all}
+.list{border-right:1px solid var(--line)}
+.it{padding:14px 16px;border-bottom:1px solid var(--line);font-size:.84rem;cursor:default}
+.it.on{background:#f4f8ff;border-left:3px solid var(--blue)}
+.it b{display:flex;justify-content:space-between;color:var(--navy)}
+.it b small{font-weight:400;color:var(--muted)}
+.it p{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.it .s{color:var(--ink);font-weight:500}
+.read{padding:24px;font-size:.88rem}
+.read h3{font-size:1.4rem;margin-bottom:10px}
+.read .meta{color:var(--muted);font-size:.8rem;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:14px}
+.read p{margin-bottom:10px}
+
+/* signature */
+.sig{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px;max-width:640px;margin:0 auto;display:flex;gap:22px;align-items:center}
+.sig svg{width:84px;height:84px;flex:none}
+.sig .bar{width:3px;align-self:stretch;background:var(--blue);border-radius:3px}
+.sig b{font-family:"Cormorant Garamond",serif;font-size:1.4rem;color:var(--navy);display:block;line-height:1.1}
+.sig .t{color:var(--blue);font-size:.82rem;font-weight:600;margin-bottom:8px}
+.sig div.l{font-size:.8rem;color:var(--muted)}
+
+/* features */
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feat div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px}
+.feat h3{font-size:1.25rem;margin-bottom:6px}
+.feat p{font-size:.88rem;color:var(--muted)}
+
+.cta{background:var(--navy);color:#c9d6ec;text-align:center;padding:60px 20px}
+.cta h2{color:#fff;font-size:2.2rem;margin-bottom:10px}
+.cta a.btn{display:inline-block;margin-top:20px;background:var(--blue);color:#fff;padding:14px 28px;border-radius:4px;font-weight:600;text-decoration:none}
+footer{text-align:center;font-size:.8rem;color:var(--muted);padding:20px}
+
+@media(max-width:900px){.mbody{grid-template-columns:1fr}.side,.read{display:none}.boxes,.feat{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cmp,.boxes,.feat{grid-template-columns:1fr}.sig{flex-direction:column;text-align:center}.sig .bar{display:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f6fd6"/><stop offset="1" stop-color="#0a1a33"/></linearGradient>
+  <symbol id="logo" viewBox="0 0 100 100"><g fill="url(#lg)"><path id="blade" d="M50 6c14 0 26 7 33 18-9-6-20-8-31-5-6 2-11 5-15 9 2-9 6-16 13-22z"/><use href="#blade" transform="rotate(60 50 50)"/><use href="#blade" transform="rotate(120 50 50)"/><use href="#blade" transform="rotate(180 50 50)"/><use href="#blade" transform="rotate(240 50 50)"/><use href="#blade" transform="rotate(300 50 50)"/></g><circle cx="50" cy="50" r="20" fill="#fff" stroke="#1d4fa3" stroke-width="2.5"/><text x="50" y="57" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="19" fill="#0a1a33">AD</text></symbol>
+</defs></svg>
+
+<div class="demo">Proposal by Reatlegile Solutions &middot; <a href="index.html">&larr; View the website concept</a></div>
+
+<div class="top">
+  <div class="wrap">
+    <div class="eyebrow">Professional Email for Ramodike Attorneys Inc.</div>
+    <h1>Your own email domain</h1>
+    <p>Replace the Gmail address with professional email on your firm's own domain. It builds trust with clients, courts, insurers and the Road Accident Fund.</p>
+    <div class="domain">@<span>ramodikeattorneys</span>.co.za</div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>First impressions matter</h2><p>The same message, sent from two different addresses.</p></div>
+    <div class="cmp">
+      <div class="bad"><div class="lbl">Today</div><div class="addr">ramodikeadattorneysinc@gmail.com</div><ul><li>Looks like a personal account</li><li>Long and easy to mistype</li><li>Easily copied by scammers</li><li>No separate mailboxes for staff</li></ul></div>
+      <div class="good"><div class="lbl">With Reatlegile Solutions</div><div class="addr">info@ramodikeattorneys.co.za</div><ul><li>Matches your website and letterhead</li><li>Short and easy to remember</li><li>Verified domain (SPF, DKIM, DMARC)</li><li>A mailbox for every staff member</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap">
+    <div class="head"><h2>Suggested mailboxes</h2><p>Set up for you, ready on phone, laptop and webmail.</p></div>
+    <div class="boxes">
+      <div class="box"><div class="av">AR</div><div><b>angy@ramodikeattorneys.co.za</b><span>Managing Director</span></div></div>
+      <div class="box"><div class="av">i</div><div><b>info@ramodikeattorneys.co.za</b><span>General enquiries (website &amp; card)</span></div></div>
+      <div class="box"><div class="av">C</div><div><b>consult@ramodikeattorneys.co.za</b><span>Consultation bookings</span></div></div>
+      <div class="box"><div class="av">R</div><div><b>raf@ramodikeattorneys.co.za</b><span>Road Accident Fund claims</span></div></div>
+      <div class="box"><div class="av">A</div><div><b>accounts@ramodikeattorneys.co.za</b><span>Invoices &amp; trust account queries</span></div></div>
+      <div class="box"><div class="av">+</div><div><b>reception@ramodikeattorneys.co.za</b><span>Front desk / candidate attorneys</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>What your inbox will look like</h2><p>Browser webmail, plus Outlook and the Gmail app on your phone.</p></div>
+    <div class="mail">
+      <div class="mbar"><div class="dots"><i></i><i></i><i></i></div><div class="url">&#128274; mail.ramodikeattorneys.co.za</div></div>
+      <div class="mbody">
+        <div class="side">
+          <div class="compose">+ New message</div>
+          <div class="f on"><span>Inbox</span><span>4</span></div>
+          <div class="f"><span>Sent</span></div>
+          <div class="f"><span>Drafts</span><span>1</span></div>
+          <div class="f"><span>RAF Claims</span></div>
+          <div class="f"><span>Court Dates</span></div>
+          <div class="f"><span>Archive</span></div>
+          <div class="who">Signed in as<br><b>angy@ramodikeattorneys.co.za</b></div>
+        </div>
+        <div class="list">
+          <div class="it on"><b>Website enquiry <small>09:14</small></b><p class="s">New consultation request: Bail application</p><p>Name: T. Mokoena, Matter: Criminal Law / Bail...</p></div>
+          <div class="it"><b>Road Accident Fund <small>08:47</small></b><p class="s">Claim acknowledgement</p><p>Your claim has been registered under reference...</p></div>
+          <div class="it"><b>Clerk of the Court <small>Yesterday</small></b><p class="s">Set down: Maintenance matter</p><p>Please note that the matter has been set down for...</p></div>
+          <div class="it"><b>Master of the High Court <small>Tue</small></b><p class="s">Letters of Executorship</p><p>Please find attached the letters of executorship...</p></div>
+          <div class="it"><b>Client <small>Mon</small></b><p class="s">Thank you, Ms Ramodike</p><p>Thank you for your help with my case...</p></div>
+        </div>
+        <div class="read">
+          <h3>New consultation request: Bail application</h3>
+          <div class="meta">From: website@ramodikeattorneys.co.za<br>To: consult@ramodikeattorneys.co.za</div>
+          <p>A new consultation request was submitted on your website.</p>
+          <p><b>Name:</b> T. Mokoena<br><b>Phone:</b> 07X XXX XXXX<br><b>Matter:</b> Criminal Law / Bail Application</p>
+          <p>"My brother was arrested last night in Pretoria and we need help with bail urgently."</p>
+          <p style="color:var(--muted);font-size:.78rem">Sample message for illustration only.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap">
+    <div class="head"><h2>Branded email signature</h2><p>Included on every mailbox.</p></div>
+    <div class="sig">
+      <svg><use href="#logo"/></svg>
+      <div class="bar"></div>
+      <div>
+        <b>Angy Dimpho Ramodike</b>
+        <div class="t">Managing Director &middot; LLB, LLM (UL)</div>
+        <div class="l">Ramodike Attorneys Inc.<br>Olivetti House, Office 200, 237 Sophie De Bruyn St, Pretoria Central<br>T: 079 022 7363 &middot; angy@ramodikeattorneys.co.za<br>www.ramodikeattorneys.co.za</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>What's included</h2></div>
+    <div class="feat">
+      <div><h3>Domain registration</h3><p>ramodikeattorneys.co.za registered in the firm's name.</p></div>
+      <div><h3>Website hosting</h3><p>Fast and secure (HTTPS), with a contact form linked to your inbox.</p></div>
+      <div><h3>Mailboxes &amp; setup</h3><p>Configured on your phone, laptop and Outlook, with your Gmail history moved over.</p></div>
+      <div><h3>Support</h3><p>Password resets, new staff mailboxes and updates, handled for you.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Ready to look as professional online as you are in court?</h2>
+  <p>Reatlegile Solutions: mobile &amp; remote IT service</p>
+  <a class="btn" href="index.html">View your website concept</a>
+</div>
+<footer>Concept prepared for Ramodike Attorneys Inc. Domain availability is confirmed at the time of registration.</footer>
+</body>
+</html>

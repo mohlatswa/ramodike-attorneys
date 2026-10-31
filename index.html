@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramodike Attorneys Inc. | Pretoria Attorneys</title>
+<meta name="description" content="Ramodike Attorneys Inc. – Pretoria Central attorneys for divorce & maintenance, unlawful arrest, RAF claims, criminal bail applications, labour, contract and corporate law, and deceased estates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0a1a33; --navy2:#10284d; --blue:#1d4fa3; --blue2:#2f6fd6; --ice:#eef3fb;
+  --ink:#1b2333; --muted:#5b6678; --line:#dde4ef; --white:#fff; --gold:#c9a24a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.15;color:var(--navy)}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:4px;font-weight:600;font-size:.95rem;transition:.2s;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue2)}
+.btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+
+/* demo ribbon */
+.demo{background:var(--gold);color:var(--navy);text-align:center;font-size:.8rem;font-weight:600;padding:7px 12px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:50px;height:50px;flex:none}
+.brand b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.35rem;letter-spacing:.18em;color:var(--navy);line-height:1}
+.brand small{display:block;font-size:.62rem;letter-spacing:.32em;color:var(--blue);font-weight:600;margin-top:4px}
+.menu{display:flex;gap:28px;align-items:center;font-size:.92rem;font-weight:500}
+.menu a:not(.btn):hover{color:var(--blue)}
+.menu .btn{padding:10px 18px}
+.burger{display:none;background:none;border:0;font-size:1.6rem;color:var(--navy);cursor:pointer}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(115deg,var(--navy) 0%,var(--navy2) 55%,var(--blue) 140%);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-180px;top:-120px;width:620px;height:620px;border-radius:50%;border:80px solid rgba(255,255,255,.04)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;padding-top:90px;padding-bottom:100px;position:relative;z-index:1}
+.hero h1{color:#fff;font-size:clamp(2.4rem,5vw,4rem);font-weight:600;margin:16px 0 20px}
+.hero h1 em{font-style:italic;color:#9cc0ff}
+.hero p{color:#c9d6ec;font-size:1.08rem;max-width:560px}
+.hero .eyebrow{color:#9cc0ff}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:30px;backdrop-filter:blur(4px)}
+.hero-card svg{width:120px;height:120px;display:block;margin:0 auto 14px}
+.hero-card h3{color:#fff;text-align:center;font-size:1.6rem;letter-spacing:.14em}
+.hero-card .tag{text-align:center;font-size:.72rem;letter-spacing:.2em;color:#9cc0ff;margin-top:4px}
+.hero-card ul{list-style:none;margin-top:22px;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:.9rem;color:#d7e2f4}
+.hero-card li{display:flex;gap:10px;padding:5px 0}
+.hero-card li span:first-child{color:#9cc0ff}
+
+/* trust bar */
+.trust{background:var(--ice);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:28px;padding-bottom:28px}
+.trust div{text-align:center}
+.trust b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.7rem;color:var(--navy)}
+.trust span{font-size:.82rem;color:var(--muted)}
+
+section{padding:96px 0}
+.head{text-align:center;max-width:680px;margin:0 auto 54px}
+.head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:10px 0 14px}
+.head p{color:var(--muted)}
+
+/* services */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.svc{border:1px solid var(--line);border-radius:8px;padding:28px 24px;background:#fff;transition:.25s;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--blue);transition:.3s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(10,26,51,.1)}
+.svc:hover::before{width:100%}
+.svc .ic{width:50px;height:50px;border-radius:50%;background:var(--ice);display:grid;place-items:center;margin-bottom:18px}
+.svc .ic svg{width:24px;height:24px;stroke:var(--blue);fill:none;stroke-width:1.8}
+.svc h3{font-size:1.35rem;margin-bottom:8px}
+.svc p{font-size:.9rem;color:var(--muted)}
+
+/* about */
+.about{background:var(--navy);color:#d7e2f4}
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:8px;background:linear-gradient(160deg,var(--navy2),var(--blue));display:grid;place-items:center;position:relative;border:1px solid rgba(255,255,255,.12)}
+.portrait .ini{font-family:"Cormorant Garamond",serif;font-size:7rem;color:rgba(255,255,255,.9);font-weight:600}
+.portrait .note{position:absolute;bottom:14px;left:14px;right:14px;font-size:.72rem;color:#9cc0ff;text-align:center}
+.about h2{color:#fff;font-size:clamp(2rem,3.6vw,2.8rem);margin:10px 0 6px}
+.about .role{color:#9cc0ff;font-weight:600;letter-spacing:.06em;margin-bottom:20px}
+.about .eyebrow{color:#9cc0ff}
+.about p{margin-bottom:14px}
+.quals{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 28px}
+.quals span{border:1px solid rgba(255,255,255,.25);border-radius:30px;padding:7px 16px;font-size:.85rem;color:#fff}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.why div{padding:30px;border-left:3px solid var(--blue);background:var(--ice);border-radius:0 8px 8px 0}
+.why h3{font-size:1.4rem;margin-bottom:8px}
+.why p{color:var(--muted);font-size:.93rem}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{text-align:center;padding:10px}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);display:block;font-family:"Cormorant Garamond",serif;font-size:3rem;color:var(--blue);font-weight:700;line-height:1;margin-bottom:10px}
+.step h3{font-size:1.3rem;margin-bottom:6px}
+.step p{font-size:.9rem;color:var(--muted)}
+
+/* consult */
+.consult{background:var(--ice)}
+.consult .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px}
+.info h2{font-size:clamp(2rem,3.4vw,2.7rem);margin:10px 0 16px}
+.info p{color:var(--muted);margin-bottom:24px}
+.ci{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.ci svg{width:22px;height:22px;stroke:var(--blue);fill:none;stroke-width:1.8;flex:none;margin-top:3px}
+.ci b{display:block;color:var(--navy);font-size:.92rem}
+.ci span,.ci a{color:var(--muted);font-size:.92rem}
+.ci a:hover{color:var(--blue)}
+form{background:#fff;border-radius:8px;padding:34px;box-shadow:0 14px 40px rgba(10,26,51,.08)}
+form h3{font-size:1.6rem;margin-bottom:4px}
+form .sub{color:var(--muted);font-size:.88rem;margin-bottom:22px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:.8rem;font-weight:600;color:var(--navy);margin:12px 0 6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:4px;font:inherit;font-size:.93rem;background:#fbfcfe}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue2);border-color:transparent}
+textarea{min-height:110px;resize:vertical}
+form .btn{width:100%;justify-content:center;margin-top:20px}
+.fine{font-size:.75rem;color:var(--muted);margin-top:12px;text-align:center}
+
+.map iframe{width:100%;height:360px;border:0;display:block;filter:grayscale(.3)}
+
+footer{background:var(--navy);color:#9fb0cb;padding:60px 0 24px;font-size:.9rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer h4{color:#fff;font-family:"Cormorant Garamond",serif;font-size:1.25rem;margin-bottom:14px}
+footer li{list-style:none;padding:3px 0}
+footer a:hover{color:#fff}
+footer .brand b{color:#fff}
+footer .brand small{color:#9cc0ff}
+.copy{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem}
+
+.wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:60}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+@media(max-width:960px){
+  .hero .wrap,.about .wrap,.consult .wrap{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .why,.steps{grid-template-columns:1fr 1fr}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr}
+  .portrait{max-width:380px}
+  .menu{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;border-bottom:1px solid var(--line);gap:16px}
+  .menu.open{display:flex}
+  .burger{display:block}
+}
+@media(max-width:560px){
+  .grid,.why,.steps,.row{grid-template-columns:1fr}
+  section{padding:70px 0}
+  .hero .wrap{padding-top:60px;padding-bottom:70px}
+  form{padding:24px}
+  .brand b{font-size:1.1rem}
+}
+</style>
+</head>
+<body>
+
+<div class="demo">Website concept prepared for Ramodike Attorneys Inc. by Reatlegile Solutions &middot; <a href="email.html" style="text-decoration:underline">See your professional email &rarr;</a></div>
+
+<!-- reusable logo -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f6fd6"/><stop offset="1" stop-color="#0a1a33"/></linearGradient>
+    <symbol id="logo" viewBox="0 0 100 100">
+      <g fill="url(#lg)">
+        <path id="blade" d="M50 6c14 0 26 7 33 18-9-6-20-8-31-5-6 2-11 5-15 9 2-9 6-16 13-22z"/>
+        <use href="#blade" transform="rotate(60 50 50)"/>
+        <use href="#blade" transform="rotate(120 50 50)"/>
+        <use href="#blade" transform="rotate(180 50 50)"/>
+        <use href="#blade" transform="rotate(240 50 50)"/>
+        <use href="#blade" transform="rotate(300 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="20" fill="#fff" stroke="#1d4fa3" stroke-width="2.5"/>
+      <text x="50" y="57" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="19" fill="#0a1a33">AD</text>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand"><svg><use href="#logo"/></svg><div><b>RAMODIKE</b><small>ATTORNEYS INC.</small></div></a>
+    <nav class="menu" id="menu">
+      <a href="#services">Practice Areas</a>
+      <a href="#about">About</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+    </nav>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding:0">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Attorneys &middot; Pretoria Central</div>
+      <h1>Trusted by many.<br><em>Trusted for a reason.</em></h1>
+      <p>Ramodike Attorneys Inc. offers practical, honest and determined legal representation, from family matters and bail applications to Road Accident Fund claims and corporate law.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Book a Consultation &rarr;</a>
+        <a href="tel:+27790227363" class="btn btn-ghost">Call 079 022 7363</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <svg><use href="#logo"/></svg>
+      <h3>RAMODIKE</h3>
+      <div class="tag">ATTORNEYS INC.</div>
+      <ul>
+        <li><span>&#9679;</span><span>237 Sophie De Bruyn Street, Olivetti House, Office 200, Pretoria Central</span></li>
+        <li><span>&#9679;</span><span>079 022 7363</span></li>
+        <li><span>&#9679;</span><span>info@ramodikeattorneys.co.za</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div><b>LLB &middot; LLM</b><span>University of Limpopo</span></div>
+    <div><b>8</b><span>Practice areas</span></div>
+    <div><b>Pretoria CBD</b><span>Close to the courts</span></div>
+    <div><b>Urgent</b><span>Bail &amp; arrest matters</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Practice Areas</div>
+      <h2>How we can help you</h2>
+      <p>Whatever your legal matter, we listen first, explain your options in plain language, and fight for the best possible outcome.</p>
+    </div>
+    <div class="grid">
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>Divorce &amp; Maintenance</h3><p>Contested and uncontested divorces, child maintenance, custody and parental rights, handled with care and discretion.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Unlawful Arrest</h3><p>Claims against the SAPS and the State for unlawful arrest, detention and malicious prosecution.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><h3>Commercial &amp; Corporate</h3><p>Company matters, shareholder agreements, compliance and day-to-day legal support for businesses.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4M10 12h6M10 16h6"/></svg></div><h3>Contract Law</h3><p>Drafting, reviewing and enforcing contracts so that your agreements protect your interests.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h16M6 20V10M10 20V10M14 20V10M18 20V10M3 10l9-6 9 6z"/></svg></div><h3>Deceased Estates</h3><p>Administration of deceased estates, wills, executorships and the Master of the High Court process.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="9" width="20" height="8" rx="2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 9l2-4h10l2 4"/></svg></div><h3>Road Accident Fund</h3><p>RAF claims for injured victims and dependants of the deceased, from lodgement through to settlement.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div><h3>Criminal Law &amp; Bail</h3><p>Urgent bail applications and criminal defence. Call us as soon as you or a loved one is arrested.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4a3 3 0 0 1 0 6M21 20c0-2.7-1.6-5-4-5.7"/></svg></div><h3>Labour &amp; Employment</h3><p>Unfair dismissals, CCMA and Labour Court matters, disciplinary hearings and employment contracts.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="portrait"><div class="ini">AR</div><div class="note">[ Professional photo of Ms Ramodike goes here ]</div></div>
+    <div>
+      <div class="eyebrow">Meet the Managing Director</div>
+      <h2>Angy Dimpho Ramodike</h2>
+      <div class="role">Managing Director &middot; Attorney</div>
+      <p>Angy Dimpho Ramodike founded Ramodike Attorneys Inc. to give individuals, families and businesses access to legal representation that is approachable, transparent and effective.</p>
+      <p>With an LLB and an LLM from the University of Limpopo, she leads the firm's work across family law, criminal defence, civil claims against the State, RAF claims, labour disputes and commercial matters.</p>
+      <div class="quals"><span>LLB (UL)</span><span>LLM (UL)</span><span>Admitted Attorney</span></div>
+      <a href="#contact" class="btn btn-primary">Speak to Ms Ramodike</a>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Why Ramodike Attorneys</div>
+      <h2>Representation you can rely on</h2>
+    </div>
+    <div class="why">
+      <div><h3>Personal attention</h3><p>You deal directly with your attorney, not a call centre. We keep you informed at every step.</p></div>
+      <div><h3>Clear, honest advice</h3><p>We explain the law, the costs and your realistic options before you commit to anything.</p></div>
+      <div><h3>Fast when it matters</h3><p>Arrests and bail applications can't wait. We respond urgently to criminal matters.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--ice);padding-top:80px;padding-bottom:80px">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">What to expect</div>
+      <h2>Your matter, step by step</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Get in touch</h3><p>Call, WhatsApp or send the consultation form below.</p></div>
+      <div class="step"><h3>Consultation</h3><p>We listen to your story and review your documents.</p></div>
+      <div class="step"><h3>Strategy</h3><p>We advise on your options, timelines and costs.</p></div>
+      <div class="step"><h3>Representation</h3><p>We act for you until your matter is resolved.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="consult" id="contact" style="background:#fff">
+  <div class="wrap">
+    <div class="info">
+      <div class="eyebrow">Contact Us</div>
+      <h2>Book a consultation</h2>
+      <p>Tell us briefly about your matter and we will get back to you as soon as possible.</p>
+      <div class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Office</b><span>237 Sophie De Bruyn Street, Olivetti House,<br>Office 200, Pretoria Central, 0001</span></div></div>
+      <div class="ci"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><div><b>Phone / WhatsApp</b><a href="tel:+27790227363">079 022 7363</a></div></div>
+      <div class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><b>Email</b><a href="mailto:info@ramodikeattorneys.co.za">info@ramodikeattorneys.co.za</a></div></div>
+      <div class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Office hours</b><span>Mon to Fri: 08:00 to 17:00<br>Urgent criminal matters: after hours by phone</span></div></div>
+    </div>
+    <form id="cf">
+      <h3>Consultation request</h3>
+      <div class="sub">Sent straight to our WhatsApp. All information is treated as confidential.</div>
+      <div class="row">
+        <div><label for="n">Full name</label><input id="n" required></div>
+        <div><label for="p">Phone number</label><input id="p" type="tel" required></div>
+      </div>
+      <label for="m">Type of matter</label>
+      <select id="m">
+        <option>Divorce &amp; Maintenance</option><option>Unlawful Arrest</option><option>Commercial &amp; Corporate Law</option><option>Contract Law</option><option>Deceased Estates</option><option>Road Accident Fund</option><option>Criminal Law / Bail Application</option><option>Labour &amp; Employment Law</option><option>Other</option>
+      </select>
+      <label for="d">Briefly describe your matter</label>
+      <textarea id="d"></textarea>
+      <button class="btn btn-primary" type="submit">Send request via WhatsApp &rarr;</button>
+      <div class="fine">Submitting this form does not create an attorney-client relationship.</div>
+    </form>
+  </div>
+</section>
+
+<div class="map"><iframe loading="lazy" title="Office location" src="https://maps.google.com/maps?q=237%20Sophie%20De%20Bruyn%20Street%2C%20Pretoria%20Central&z=16&output=embed"></iframe></div>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="margin-bottom:16px"><svg style="width:46px;height:46px"><use href="#logo"/></svg><div><b>RAMODIKE</b><small>ATTORNEYS INC.</small></div></div>
+        <p>Trusted by many. Trusted for a reason.</p>
+      </div>
+      <div><h4>Practice Areas</h4><ul><li>Divorce &amp; Maintenance</li><li>Criminal Law &amp; Bail</li><li>Road Accident Fund</li><li>Labour &amp; Employment</li><li><a href="#services">View all &rarr;</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>Olivetti House, Office 200</li><li>237 Sophie De Bruyn St, Pretoria</li><li><a href="tel:+27790227363">079 022 7363</a></li><li><a href="mailto:info@ramodikeattorneys.co.za">info@ramodikeattorneys.co.za</a></li></ul></div>
+    </div>
+    <div class="copy"><span>&copy; <span id="yr"></span> Ramodike Attorneys Inc. All rights reserved.</span><span>Website &amp; email by Reatlegile Solutions</span></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/27790227363" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+document.getElementById('cf').addEventListener('submit',e=>{
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const msg=`Consultation request\nName: ${v('n')}\nPhone: ${v('p')}\nMatter: ${v('m')}\n\n${v('d')}`;
+  window.open('https://wa.me/27790227363?text='+encodeURIComponent(msg),'_blank');
+});
+</script>
+</body>
+</html>
